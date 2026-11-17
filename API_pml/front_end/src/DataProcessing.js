@@ -18,7 +18,7 @@ const DataProcessing= () => {
                         <tr><th>Metri</th><th>Values</th></tr>
                     </thead>
                     <tbody>
-                        <tr><td>Acurracy</td><td>{pc(data.acurracy)}</td></tr>
+                        <tr><td>Acurracy</td><td>{pc(data.accuracy)}</td></tr>
                         <tr><td>Precision</td><td>{pc(data.precision)}</td></tr>
                         <tr><td>Recall</td><td>{pc(data.recall)}</td></tr>
                         <tr><td>F1</td><td>{pc(data.f1)}</td></tr>
