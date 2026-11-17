@@ -1,0 +1,90 @@
+{
+  "best_threshold": 0.7330283550471175,
+  "importance": [
+    {
+      "feature": "PageValues",
+      "importance": 0.55963,
+      "std": 0.012033
+    },
+    {
+      "feature": "ExitRates",
+      "importance": 0.054125,
+      "std": 0.007323
+    },
+    {
+      "feature": "Month",
+      "importance": 0.047659,
+      "std": 0.004664
+    },
+    {
+      "feature": "ProductRelated_Duration",
+      "importance": 0.01856,
+      "std": 0.005597
+    },
+    {
+      "feature": "ProductRelated",
+      "importance": 0.015954,
+      "std": 0.002526
+    },
+    {
+      "feature": "BounceRates",
+      "importance": 0.013516,
+      "std": 0.005037
+    },
+    {
+      "feature": "Administrative",
+      "importance": 0.012981,
+      "std": 0.003301
+    },
+    {
+      "feature": "VisitorType",
+      "importance": 0.010839,
+      "std": 0.004206
+    },
+    {
+      "feature": "Administrative_Duration",
+      "importance": 0.003937,
+      "std": 0.002635
+    },
+    {
+      "feature": "TrafficType",
+      "importance": 0.002564,
+      "std": 0.001502
+    },
+    {
+      "feature": "OperatingSystems",
+      "importance": 0.001888,
+      "std": 0.001021
+    },
+    {
+      "feature": "Weekend",
+      "importance": 0.000475,
+      "std": 0.000423
+    },
+    {
+      "feature": "SpecialDay",
+      "importance": 0.000224,
+      "std": 0.00015
+    },
+    {
+      "feature": "Browser",
+      "importance": -0.000158,
+      "std": 0.000592
+    },
+    {
+      "feature": "Informational",
+      "importance": -0.000232,
+      "std": 0.000323
+    },
+    {
+      "feature": "Region",
+      "importance": -0.000239,
+      "std": 0.001568
+    },
+    {
+      "feature": "Informational_Duration",
+      "importance": -0.002051,
+      "std": 0.000847
+    }
+  ]
+}
