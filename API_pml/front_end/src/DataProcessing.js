@@ -22,11 +22,32 @@ const DataProcessing= () => {
                         <tr><td>Precision</td><td>{pc(data.precision)}</td></tr>
                         <tr><td>Recall</td><td>{pc(data.recall)}</td></tr>
                         <tr><td>F1</td><td>{pc(data.f1)}</td></tr>
-                        <tr><td>RON-AUC</td><td>{pc(data.roc_aux.toFixed(3))}</td></tr>
+                        <tr><td>RON-AUC</td><td>{pc(data.roc_auc.toFixed(3))}</td></tr>
                     </tbody>
                  </table>
 
-                 <h3>COnfusion matrix</h3>
+                 <h3>Confusion matrix</h3>
+                 <table className="confusionm">
+                    <thead>
+                     <tr>
+                     <th></th>
+                      <th>Predicted: no purchase</th>
+                      <th>Predicted: purchase</th>
+                     </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                        <th>Actual: no purchase</th>
+                        <td>{data.confusion_matrix.tn}</td>
+                        <td>{data.confusion_matrix.fp}</td>
+                        </tr>
+                        <tr>
+                            <th>Actual: purchase</th>
+                        <td>{data.confusion_matrix.fn}</td>
+                        <td>{data.confusion_matrix.tp}</td>
+                        </tr>
+                    </tbody>
+                 </table>
 
                 </div>
             )
@@ -34,5 +55,6 @@ const DataProcessing= () => {
 
             }
         </div>
-     )
-}
+     );
+};
+export default DataProcessing;

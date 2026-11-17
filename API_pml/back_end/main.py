@@ -21,7 +21,7 @@ from fastapi.middleware.cors import CORSMiddleware
 from pydantic import BaseModel, Field
 from sklearn.metrics import (accuracy_score, confusion_matrix, f1_score,
                              precision_recall_curve, precision_score,
-                             recall_score)
+                             recall_score, roc_auc_score)
 
 MODEL_DIR = Path(__file__).parent / "model"
 
@@ -58,6 +58,7 @@ def metrics_at(t: float) -> dict:
         "confusion_matrix": {"tn": int(tn), "fp": int(fp),
                              "fn": int(fn), "tp": int(tp)},
         "n_test": int(len(y_test)),
+        "roc_auc": roc_auc_score(y_test,p_test),
     }
 
 
